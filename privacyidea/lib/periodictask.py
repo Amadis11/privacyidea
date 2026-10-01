@@ -38,6 +38,8 @@ from privacyidea.models.utils import utc_now
 log = logging.getLogger(__name__)
 
 #: TASK_MODULES maps task module identifiers to subclasses of BaseTask
+TASK_CLASSES = [EventCounterTask]
+
 TASK_MODULES = dict((cls.identifier, cls) for cls in TASK_CLASSES)
 
 
